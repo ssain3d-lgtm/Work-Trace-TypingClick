@@ -93,6 +93,8 @@ XMLHttpRequest.prototype.open = function (m, url, ...rest) {
 
 Firefox는 `world: "MAIN"` 대신 `<script>` 태그 주입 + `wrappedJSObject`로 동일하게 구현 가능. Safari는 제약이 크다.
 
+> 📱 **안드로이드(갤럭시)에서는 캡처 경로가 다르다.** WebView 앱의 `WebViewCompat.addDocumentStartJavaScript()` + `addWebMessageListener()` 조합이 `world:"MAIN"` + `run_at:"document_start"` 와 1:1 대응한다. 루팅 불필요. 네이티브 TikTok 앱 트래픽 가로채기가 왜 막다른 길인지까지 포함해 [tiktok-android-capture-design.md](./tiktok-android-capture-design.md)에 정리했다.
+
 ### 3.2 정규화
 
 ```js
@@ -269,6 +271,7 @@ Tier 1에서 `z ≥ 2.0`으로 걸린 것만 **추적 패널**에 편입해 재�
 |---|---|
 | 캐주얼 (하루 30분) | 200~400 |
 | 헤비 (하루 2시간+) | 1,000~2,000 |
+| **모바일** (스크롤이 빠르고 세션이 잦음) | **500~1,500** — 워밍업이 1주로 단축 |
 
 코호트 통계는 **나이 버킷당 100개 이상** 샘플이 필요하다. 버킷이 7개면 700개 → 캐주얼 사용자 기준 **누적 1~2주**.
 

@@ -42,7 +42,7 @@
 
 이 유니버스 정의가 곧 커버리지의 상한이다. 여기 없으면 절대 못 잡는다.
 
-> **모드 C가 이 문제를 우회한다.** 내 FYP에 뜨는 것을 그대로 캡처하면 TikTok의 추천 알고리즘이 유니버스를 대신 정의해 준다. 대신 표본 편향을 감수해야 한다 — [tiktok-fyp-capture-design.md](./tiktok-fyp-capture-design.md) 참고.
+> **모드 C가 이 문제를 우회한다.** 내 FYP에 뜨는 것을 그대로 캡처하면 TikTok의 추천 알고리즘이 유니버스를 대신 정의해 준다. 대신 표본 편향을 감수해야 한다 — [tiktok-fyp-capture-design.md](./tiktok-fyp-capture-design.md) 참고. 안드로이드/갤럭시 구현은 [tiktok-android-capture-design.md](./tiktok-android-capture-design.md).
 
 ---
 
